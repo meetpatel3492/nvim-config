@@ -28,6 +28,6 @@ vim.opt.scrolloff = 10
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
-vim.opt.colorcolumn = "110"
+vim.opt.colorcolumn = "130"
 
 vim.g.mapleader = " "

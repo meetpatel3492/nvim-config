@@ -1,6 +1,6 @@
 vim.g.mapleader = " "
 
---- netrw, file sys navigation --- 
+--- netrw, file sys navigation ---
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 --- move lines in visual mode ---
@@ -29,7 +29,7 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 --- to delete in void register and not affect yanked buffer ---
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
--- This is weird --- 
+-- This is weird ---
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
 --- never, I said never ---
@@ -44,7 +44,7 @@ vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
---- prompts for replace on selected text --- 
+--- prompts for replace on selected text ---
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 --- makes file executable ---
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
@@ -52,4 +52,14 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
+end)
+
+
+vim.keymap.set("n", "<leader>GS", function()
+    vim.cmd("!git status")
+end)
+
+
+vim.keymap.set("n", "<leader>GB", function()
+    vim.cmd("!git branch")
 end)

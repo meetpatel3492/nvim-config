@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/meetpatel/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  catppuccin = {
+    loaded = true,
+    path = "/home/meetpatel/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/vim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/meetpatel/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -124,6 +129,16 @@ _G.packer_plugins = {
     path = "/home/meetpatel/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-ts-rainbow"] = {
+    loaded = true,
+    path = "/home/meetpatel/.local/share/nvim/site/pack/packer/start/nvim-ts-rainbow",
+    url = "https://github.com/mrjones2014/nvim-ts-rainbow"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/home/meetpatel/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/meetpatel/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -138,6 +153,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/meetpatel/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ripgrep = {
+    loaded = true,
+    path = "/home/meetpatel/.local/share/nvim/site/pack/packer/start/ripgrep",
+    url = "https://github.com/BurntSushi/ripgrep"
   },
   ["rose-pine"] = {
     loaded = true,
