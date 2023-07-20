@@ -9,6 +9,7 @@ require 'nvim-web-devicons'.setup {
             name = "Gitignore"
         }
     },
+    -- list of icons - https://devicon.dev/
     override_by_extension = {
         ["log"] = {
             icon = "",
