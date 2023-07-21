@@ -5,8 +5,6 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
-
-
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.2',
         requires = {
@@ -14,19 +12,12 @@ return require('packer').startup(function(use)
             { 'BurntSushi/ripgrep' }
         }
     }
-
     use({ 'rose-pine/neovim', as = 'rose-pine' })
-
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
-
     use('nvim-treesitter/playground')
-
     use('ThePrimeagen/harpoon')
-
     use('mbbill/undotree')
-
     use('tpope/vim-fugitive')
-
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v2.x',
@@ -53,4 +44,13 @@ return require('packer').startup(function(use)
     use({ 'catppuccin/vim', as = 'catppuccin' })
     use('mrjones2014/nvim-ts-rainbow')
     use('nvim-tree/nvim-web-devicons')
+    use('jiangmiao/auto-pairs')
+    use('mfussenegger/nvim-jdtls')
+
+    use('Exafunction/codeium.vim')
+    -- dart plugins
+    use('dart-lang/dart-vim-plugin')
+    use("RobertBrunhage/flutter-riverpod-snippets")
+    use('Neevash/awesome-flutter-snippets')
+    use("j-hui/fidget.nvim", { tag = "legacy" })
 end)

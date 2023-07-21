@@ -1,4 +1,5 @@
 local lsp = require('lsp-zero')
+local lsp_config = require('lspconfig')
 
 lsp.preset('recommended')
 
@@ -41,4 +42,25 @@ lsp.on_attach(function(client, bufnr)
     vim.keymap.set("n", "<leader>f", function() vim.lsp.buf.format({ async = true, timeout = 3000 }) end, opts)
 end)
 
+cmp_mappings["<Tab>"] = vim.NIL
+cmp_mappings["<S-Tab>"] = vim.NIL
+
+lsp.skip_server_setup({ 'jdtls' })
+
+lsp_config["dartls"].setup({
+    on_attach = on_attach,
+    settings = {
+        dart = {
+            analysisExcluededFolders = {
+                vim.fn.expand("$HOME/.pub-cache"),
+                vim.fn.expand("$HOME/.cache"),
+                vim.fn.expand("$HOME/.local/flutter"),
+            }
+        }
+    }
+})
+
+
 lsp.setup()
+
+require("fidget").setup({})

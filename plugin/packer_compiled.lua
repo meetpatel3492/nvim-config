@@ -79,6 +79,16 @@ _G.packer_plugins = {
     path = "/home/meetpatel/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["auto-pairs"] = {
+    loaded = true,
+    path = "/home/meetpatel/.local/share/nvim/site/pack/packer/start/auto-pairs",
+    url = "https://github.com/jiangmiao/auto-pairs"
+  },
+  ["awesome-flutter-snippets"] = {
+    loaded = true,
+    path = "/home/meetpatel/.local/share/nvim/site/pack/packer/start/awesome-flutter-snippets",
+    url = "https://github.com/Neevash/awesome-flutter-snippets"
+  },
   catppuccin = {
     loaded = true,
     path = "/home/meetpatel/.local/share/nvim/site/pack/packer/start/catppuccin",
@@ -88,6 +98,26 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/meetpatel/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["codeium.vim"] = {
+    loaded = true,
+    path = "/home/meetpatel/.local/share/nvim/site/pack/packer/start/codeium.vim",
+    url = "https://github.com/Exafunction/codeium.vim"
+  },
+  ["dart-vim-plugin"] = {
+    loaded = true,
+    path = "/home/meetpatel/.local/share/nvim/site/pack/packer/start/dart-vim-plugin",
+    url = "https://github.com/dart-lang/dart-vim-plugin"
+  },
+  ["fidget.nvim"] = {
+    loaded = true,
+    path = "/home/meetpatel/.local/share/nvim/site/pack/packer/start/fidget.nvim",
+    url = "https://github.com/j-hui/fidget.nvim"
+  },
+  ["flutter-riverpod-snippets"] = {
+    loaded = true,
+    path = "/home/meetpatel/.local/share/nvim/site/pack/packer/start/flutter-riverpod-snippets",
+    url = "https://github.com/RobertBrunhage/flutter-riverpod-snippets"
   },
   gruvbox = {
     loaded = true,
@@ -118,6 +148,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/meetpatel/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-jdtls"] = {
+    loaded = true,
+    path = "/home/meetpatel/.local/share/nvim/site/pack/packer/start/nvim-jdtls",
+    url = "https://github.com/mfussenegger/nvim-jdtls"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
