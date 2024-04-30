@@ -1,5 +1,17 @@
 function ColorMeDaddy(color)
-	color = color or "catppuccin_mocha"
+    local themeMap = {}
+    themeMap[1] = "gruvbox"
+    themeMap[3] = "monokai"
+    themeMap[2] = "catppuccin_mocha"
+    themeMap[4] = "sonokai"
+    themeMap[5] = "rose-pine"
+    themeMap[6] = "xcode"
+    themeMap[7] = "one"
+
+    local randomNum = math.random(1, 7)
+    print(themeMap[randomNum])
+
+	color = color or themeMap[randomNum]
 	vim.cmd.colorscheme(color)
 
 	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })

@@ -47,6 +47,8 @@ cmp_mappings["<S-Tab>"] = vim.NIL
 
 lsp.skip_server_setup({ 'jdtls' })
 
+lsp_config["jdtls"].setup({})
+
 lsp_config["dartls"].setup({
     on_attach = on_attach,
     settings = {
