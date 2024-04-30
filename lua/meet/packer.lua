@@ -38,7 +38,7 @@ return require('packer').startup(function(use)
         }
     }
     --- themes
-    use({ 'lunacookies/vim-colors-xcode', as = 'xcode'  })
+    use({ 'lunacookies/vim-colors-xcode', as = 'xcode' })
     use({ 'sainnhe/sonokai', as = 'sonokai' })
     use({ 'morhetz/gruvbox', as = 'gruvbox' })
     use({ 'rose-pine/neovim', as = 'rose-pine' })
@@ -53,6 +53,7 @@ return require('packer').startup(function(use)
     use('mfussenegger/nvim-jdtls')
 
     --- use('Exafunction/codeium.vim')
+
     -- dart plugins
     use('dart-lang/dart-vim-plugin')
     use("RobertBrunhage/flutter-riverpod-snippets")
