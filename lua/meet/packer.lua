@@ -59,4 +59,6 @@ return require('packer').startup(function(use)
     use("RobertBrunhage/flutter-riverpod-snippets")
     use('Neevash/awesome-flutter-snippets')
     use("j-hui/fidget.nvim", { tag = "legacy" })
+    -- kickstart vim configurations
+    use("lewis6991/gitsigns.nvim")
 end)

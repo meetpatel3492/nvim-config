@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/home/meet/.local/share/nvim/site/pack/packer/start/flutter-riverpod-snippets",
     url = "https://github.com/RobertBrunhage/flutter-riverpod-snippets"
   },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/home/meet/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
   gruvbox = {
     loaded = true,
     path = "/home/meet/.local/share/nvim/site/pack/packer/start/gruvbox",
