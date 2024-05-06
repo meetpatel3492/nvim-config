@@ -1,8 +1,8 @@
 function ColorMeDaddy(color)
     local themeMap = {}
     themeMap[1] = "gruvbox"
-    themeMap[3] = "monokai"
     themeMap[2] = "catppuccin_mocha"
+    themeMap[3] = "monokai"
     themeMap[4] = "sonokai"
     themeMap[5] = "rose-pine"
     themeMap[6] = "xcode"
