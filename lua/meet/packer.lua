@@ -5,6 +5,7 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
+
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.2',
         requires = {
@@ -12,8 +13,10 @@ return require('packer').startup(function(use)
             { 'BurntSushi/ripgrep' }
         }
     }
+
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('nvim-treesitter/playground')
+
     use('ThePrimeagen/harpoon')
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
@@ -37,27 +40,18 @@ return require('packer').startup(function(use)
             { 'L3MON4D3/LuaSnip' },     -- Required
         }
     }
+
     --- themes
-    use({ 'lunacookies/vim-colors-xcode', as = 'xcode' })
     use({ 'sainnhe/sonokai', as = 'sonokai' })
     use({ 'morhetz/gruvbox', as = 'gruvbox' })
     use({ 'rose-pine/neovim', as = 'rose-pine' })
-    use({ 'ku1ik/vim-monokai', as = 'monokai' })
     use({ 'catppuccin/vim', as = 'catppuccin' })
-    use({ 'rakr/vim-one', as = 'one' })
     --- themes
 
     use('mrjones2014/nvim-ts-rainbow')
     use('nvim-tree/nvim-web-devicons')
     use('jiangmiao/auto-pairs')
-    use('mfussenegger/nvim-jdtls')
 
-    --- use('Exafunction/codeium.vim')
-
-    -- dart plugins
-    use('dart-lang/dart-vim-plugin')
-    use("RobertBrunhage/flutter-riverpod-snippets")
-    use('Neevash/awesome-flutter-snippets')
     use("j-hui/fidget.nvim", { tag = "legacy" })
     -- kickstart vim configurations
     use("lewis6991/gitsigns.nvim")
